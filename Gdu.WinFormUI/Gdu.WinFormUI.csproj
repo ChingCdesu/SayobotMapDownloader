@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{340A139A-05F7-4322-9DD6-71D5C1E9BBA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gdu.WinFormUI</RootNamespace>
+    <AssemblyName>Gdu.WinFormUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Forms\GMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GMForm.Designer.cs">
+      <DependentUpon>GMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GMShadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GMShadow.Designer.cs">
+      <DependentUpon>GMShadow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GMControls\Common\GMBarControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GMControls\Common\GMControlType.cs" />
+    <Compile Include="GMControls\Common\IGMControl.cs" />
+    <Compile Include="GMControls\ProgressBar\GMProgessBarThemeBase.cs" />
+    <Compile Include="GMControls\ProgressBar\GMProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GMControls\ProgressBar\ProgressBarShapeStyle.cs" />
+    <Compile Include="GMControls\RollingBar\GMRollingBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GMControls\RollingBar\GMRollingBarThemeBase.cs" />
+    <Compile Include="GMControls\RollingBar\RollingBarStyle.cs" />
+    <Compile Include="GMControls\ScrollBar\GMHScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GMControls\ScrollBar\GMScrollBarBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GMControls\ScrollBar\GMScrollBarThemeBase.cs" />
+    <Compile Include="GMControls\ScrollBar\GMVScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GMControls\TrackBar\CutePointAndValuePresenter.cs" />
+    <Compile Include="GMControls\TrackBar\GMTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GMControls\TrackBar\GMTrackBarThemeBase.cs" />
+    <Compile Include="MyGraphics\ColorHelper.cs" />
+    <Compile Include="MyGraphics\GraphicsPathHelper.cs" />
+    <Compile Include="MyGraphics\NewGraphics.cs" />
+    <Compile Include="MyGraphics\RoundStyle.cs" />
+    <Compile Include="Painter\BasicBlockPainter.cs" />
+    <Compile Include="Painter\RectangleGlassPosition.cs" />
+    <Compile Include="Painter\RollingBarPainter.cs" />
+    <Compile Include="Painter\SimpleObjectPainter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\ButtonColorTable.cs" />
+    <Compile Include="Forms\ControlBoxManager.cs" />
+    <Compile Include="Forms\MdiBarController.cs" />
+    <Compile Include="Theme\Form\ThemeFormDevExpress.cs" />
+    <Compile Include="Theme\Form\ThemeFormVS2013.cs" />
+    <Compile Include="Theme\ProgressBar\ThemeProgressBarBlue.cs" />
+    <Compile Include="Theme\ProgressBar\ThemeProgressBarGreen.cs" />
+    <Compile Include="Theme\RollingBar\ThemeRollingBarCircleDots.cs" />
+    <Compile Include="Theme\RollingBar\ThemeRollingBarFullCircle.cs" />
+    <Compile Include="Theme\RollingBar\ThemeRollingBarGuys.cs" />
+    <Compile Include="Theme\ProgressBar\ThemeProgressBarSoftGreen.cs" />
+    <Compile Include="Theme\RollingBar\ThemeRollingBarChromeGreen.cs" />
+    <Compile Include="Theme\RollingBar\ThemeRollingBarRing.cs" />
+    <Compile Include="Theme\ScrollBar\ThemeScrollbarChrome.cs" />
+    <Compile Include="Theme\ScrollBar\ThemeScrollbarDevStyle.cs" />
+    <Compile Include="Theme\ScrollBar\ThemeScrollbarEllipse.cs" />
+    <Compile Include="Theme\ScrollBar\ThemeScrollbarNoSideButtons.cs" />
+    <Compile Include="Theme\ScrollBar\ThemeScrollbarVS2013.cs" />
+    <Compile Include="Theme\ScrollBar\ThemeScrollbarXMPBlack.cs" />
+    <Compile Include="Theme\TrackBar\ThemeTrackBarMetropolis.cs" />
+    <Compile Include="Theme\TrackBar\ThemeTrackBarTTPlayer.cs" />
+    <Compile Include="Theme\TrackBar\ThemeTrackBarXMP.cs" />
+    <Compile Include="WLControls\WLButton.cs" />
+    <Compile Include="Forms\ThemeFormBase.cs" />
+    <Compile Include="Theme\Form\ThemeFormNew.cs" />
+    <Compile Include="Win32\WinAPI.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
